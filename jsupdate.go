@@ -108,7 +108,7 @@ func (r *Runner) Run() error {
 				message = append(message, fmt.Sprintf("* upgrade %s from %s to %s",
 					req.Package, req.Current, req.Latest))
 			}
-		cmd := exec.Command("git", "-C", r.RootDir, "add", "-A")
+		cmd := exec.Command("git", "add", "-A")
 		cmd.Stdout = os.Stdout
 		cmd.Stderr = os.Stderr
 		cmd.Dir = r.RootDir
