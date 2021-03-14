@@ -1,5 +1,5 @@
-module github.com/crewjam/goupdate
+module github.com/crewjam/jsupdate
 
-go 1.15
+go 1.16
 
 require github.com/fatih/color v1.10.0
